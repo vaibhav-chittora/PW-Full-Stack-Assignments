@@ -1,0 +1,4 @@
+Doctype HTML is a declaration that tells the browser what version of HTML the document is written in. This declaration appears as the very first line in an HTML file.
+
+The HTML <!DOCTYPE> declaration is not an HTML element or tag. It is an instruction that tells the browser what type of document to expect.
+All HTML documents need to start with a <!DOCTYPE> declaration. The declaration varies depending on what version of HTML the document is written in.

@@ -1,0 +1,10 @@
+HTML Tags - The things wrapped in triangular braces (the < … > characters) are called tags. These are the most important part of HTML markup that is used to describe the structure of content. There are both opening tags and closing tags (or starting tags and ending tags) which come in pairs to enclose pieces of content.
+
+Example - <p>This is a paragraph.</p> 
+In this <p> and </p> are the opening and closing tags respectively.
+
+
+HTML Elements - An element in HTML usually consist of a start tag <tag name>, close tag </tag name> and content inserted between them. Technically, an element is a collection of start tag, attributes, end tag, content between them.
+
+Example - <p> Hello world!!! </p>  
+the whole above example is called an element
