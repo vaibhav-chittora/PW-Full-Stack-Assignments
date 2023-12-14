@@ -1,0 +1,31 @@
+HTML5, the latest version of the Hypertext Markup Language, introduced several new features and improvements over its predecessors. Here's a list of key features in HTML5:
+
+Semantic Elements:
+<header>, <nav>, <article>, <section>, <aside>, <footer>: These elements provide a more semantic way to structure a web page.
+
+Audio and Video:
+<audio> and <video> elements allow embedding multimedia content without the need for plugins. They support various formats and provide APIs for controlling playback.
+
+Canvas:
+The <canvas> element provides a 2D drawing space through JavaScript, allowing for dynamic graphics and animations.
+
+SVG (Scalable Vector Graphics):
+SVG is now a part of the HTML5 specification, allowing vector graphics to be embedded directly in HTML.
+
+Local Storage:
+The localStorage and sessionStorage APIs provide a way to store data on the client side persistently (across sessions) or session-specific.
+
+Web Storage:
+The localStorage and sessionStorage APIs allow for storing key/value pairs locally on the user's device.
+
+Geolocation:
+The Geolocation API enables web applications to access the user's geographical location information.
+
+Web Workers:
+Web Workers allow for the execution of scripts in the background, independent of the main page, enabling multi-threading in web applications.
+
+WebSockets:
+The WebSocket API facilitates full-duplex communication channels over a single, long-lived connection, improving real-time communication between clients and servers.
+
+Form Controls and Attributes:
+New input types (date, email, url, etc.) and attributes (such as placeholder, required, pattern) enhance form creation and validation.
