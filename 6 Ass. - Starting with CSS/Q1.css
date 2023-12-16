@@ -1,0 +1,11 @@
+.external {
+    background-color: yellow;
+}
+
+.internal_external {
+    color: blue;
+}
+
+.inline_internal_external {
+    color: rgb(102, 133, 0);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .form_container {
+        border: 1px solid red;
+        background-color: blanchedalmond;
+        width: 500px;
+      }
+      .formContainer {
+        margin: 20px;
+      }
+      label {
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+      }
+      input {
+        margin: 10px;
+        padding: 5px;
+        font-size: 18px;
+      }
+      input:hover {
+        background-color: black;
+        color: rgb(255, 132, 0);
+      }
+      button {
+        background-color: red;
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: grey;
+        transition: 0.3ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form_container">
+      <form action="#" class="formContainer">
+        <h1>Fill out the form..</h1>
+        <div>
+          <label for="name">First Name:</label>
+          <input type="text" placeholder="Enter your name..." />
+        </div>
+        <div>
+          <label for="name">Last Name:</label>
+          <input type="text" placeholder="Enter your last name..." />
+        </div>
+        <div>
+          <label for="name">Email:</label>
+          <input type="email" placeholder="Enter your email id..." />
+        </div>
+        <div>
+          <label for="name">Password:</label>
+          <input type="password" placeholder="Enter your password..." />
+        </div>
+        <div>
+          <label for="name">Confirm Password:</label>
+          <input
+            type="password"
+            placeholder="Enter your password to Confirm..."
+          />
+        </div>
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" placeholder="Enter your age..." />
+        </div>
+        <div>
+          <label for="Gender">Gender -</label>
+          <input type="radio" name="Gender" id="Male" />Male
+          <input type="radio" name="Gender" id="Female" />Female
+        </div>
+        <div>
+          <input type="checkbox" name="" id="" />I agree to the terms and
+          conditions.<sup>*</sup>
+        </div>
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

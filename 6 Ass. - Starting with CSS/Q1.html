@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starting with CSS</title>
+    <link rel="stylesheet" href="Q1.css" />
+    <style>
+      .internal {
+        background-color: aqua;
+      }
+      .inline_internal {
+        color: rgb(39, 211, 163);
+      }
+      .internal_external {
+        color: rgb(35, 147, 70);
+      }
+      .inline_internal_external {
+        color: rgb(178, 32, 32);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inline" style="background-color: red">
+      This is modified by inline CSS.
+    </div>
+    <hr />
+    <div class="internal">This is modified by internal CSS.</div>
+    <hr />
+    <div class="external">This is modified by external CSS.</div>
+    <hr />
+    <div class="inline_internal" style="color: brown">
+      This is modified by inline + internal CSS.
+    </div>
+    <hr />
+    <!-- Output will be whichever will be styled at last. -->
+    <div class="internal_external">
+      This is modified by internal + external CSS.
+    </div>
+    <hr />
+    <!-- Output will be of inline CSS only -->
+    <div class="inline_internal_external" style="color: lightcoral">
+      This is modified by inline + internal + external CSS.
+    </div>
+    <hr />
+  </body>
+</html>
