@@ -1,0 +1,23 @@
+a{
+    color red;
+    text-decoration: none;
+    
+}
+li::marker{
+   color:  green;
+}
+nav>h2{
+    color: black;
+    background-color: yellow;
+}
+div+p{
+    color :red;
+}
+.active{
+    color: white;
+    background-color: gray;
+}
+p:nth-child(even)::first-letter{
+    font-size: 50px;
+    color: green;
+}
