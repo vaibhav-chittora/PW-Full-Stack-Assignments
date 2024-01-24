@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Model</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:200px ;
+        }
+        div{
+            text-align: center;
+            font-size: 35px;
+        }
+        .face{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(0deg, red 0px, black 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, Grey 0px, green 1px,transparent 1px, transparent 21px),linear-gradient(90deg, Blue,blue);
+        }
+        .cube{
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .top{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .bottom{
+            transform: rotateX(-90deg) translateZ(100px);
+
+        }
+
+        .front{
+            transform: rotateX(0deg) translateZ(100px);
+
+        }
+
+        .rear{
+            transform: rotateX(-180deg) translateZ(100px);
+
+        }
+
+        .left{
+            transform: rotateY(-90deg) translateZ(100px);
+
+        }
+
+        .right{
+            transform: rotateY(90deg) translateZ(100px);
+
+        }
+
+        @keyframes spin {
+            from{
+                transform: rotateX(0deg) rotateY(0deg);
+       }
+       to{
+        transform: rotateX(360deg) rotateY(360deg);
+       }
+            
+        }
+        .cube{
+            transform-style: preserve-3d;
+            height: 200px;
+            width: 200px;
+            position: relative;
+  animation: spin 5s infinite linear;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cube">
+        <div class="face top">TOP</div>
+        <div class="face bottom">BOTTOM</div>
+        <div class="face front">FRONT</div>
+        <div class="face rear">REAR</div>
+        <div class="face left">LEFT</div>
+        <div class="face right">RIGHT</div>
+    </div>
+</body>
+</html>
