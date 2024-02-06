@@ -1,0 +1,78 @@
+In JavaScript, operators can be categorized based on their functionality into several groups:
+
+1) Arithmetic Operators:
+
+Arithmetic operators perform mathematical operations on numeric operands.
+Examples:
+// Addition
+let result = 5 + 3; // result is 8
+
+// Subtraction
+let difference = 10 - 4; // difference is 6
+
+// Multiplication
+let product = 2 * 6; // product is 12
+
+// Division
+let quotient = 20 / 5; // quotient is 4
+
+// Modulus (remainder)
+let remainder = 10 % 3; // remainder is 1
+
+------------------------------------------------------------------------------------------------------------------
+
+2) Comparison Operators : Comparison operators are used to compare two values and return a Boolean result indicating the comparison's outcome.
+Examples:
+// Equal to
+console.log(5 === 5); // true
+
+// Not equal to
+console.log(10 !== 5); // true
+
+// Greater than
+console.log(8 > 3); // true
+
+// Less than or equal to
+console.log(10 <= 20); // true
+
+------------------------------------------------------------------------------------------------------------------
+
+3) Logical Operators:Logical operators are used to combine or modify Boolean expressions.
+Examples:let x = true;
+let y = false;
+
+// Logical AND
+console.log(x && y); // false
+
+// Logical OR
+console.log(x || y); // true
+
+// Logical NOT
+console.log(!x); // false
+
+------------------------------------------------------------------------------------------------------------------
+4) Assignment Operators:Assignment operators are used to assign values to variables.
+Examples:let x = 10; // Simple assignment
+
+x += 5; // Addition assignment, equivalent to x = x + 5
+
+let y = 7;
+y *= 3; // Multiplication assignment, equivalent to y = y * 3
+
+------------------------------------------------------------------------------------------------------------------
+
+5)Unary Operators:Unary operators operate on a single operand.
+Examples:let num = 5;
+
+// Unary plus (converts an operand into a number)
+console.log(+num); // 5
+
+// Unary minus (negates its operand)
+console.log(-num); // -5
+
+// Increment and decrement
+let i = 10;
+console.log(++i); // 11
+console.log(--i); // 10
+
+

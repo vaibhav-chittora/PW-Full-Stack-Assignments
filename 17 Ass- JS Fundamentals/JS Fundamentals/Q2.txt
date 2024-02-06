@@ -1,0 +1,17 @@
+Explain the key differences between JavaScript and HTML. Provide examples of situations where
+you would use each. in short way
+ChatGPT
+Here are the key differences between JavaScript and HTML, along with examples of situations where each is typically used:
+
+JavaScript:JavaScript is a programming language used to add interactivity, dynamic behavior, and logic to web pages.
+It is typically used for tasks such as form validation, DOM manipulation, event handling, and making AJAX requests.
+Example: Creating a slideshow that automatically transitions between images, validating user input in a form before submission, implementing client-side form validation.
+
+HTML:HTML (Hypertext Markup Language) is a markup language used to structure and define the content of web pages.
+It is used to create the structure of web pages by defining elements such as headings, paragraphs, lists, links, images, and tables.
+Example: Creating the layout and structure of a web page using tags like <div>, <p>, <h1>, <ul>, <img>, <a>, and <table>.
+
+_*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*__*_
+
+
+In summary, JavaScript is used to add interactivity and dynamic behavior to web pages, while HTML is used to define the structure and content of web pages. JavaScript is employed for tasks that require logic and user interaction, whereas HTML is used to define the visual and structural elements of a web page. Both JavaScript and HTML work together to create rich and interactive web experiences.
