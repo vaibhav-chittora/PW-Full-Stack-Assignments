@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone - Dark Theme</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .sidebar {
+            width: 250px;
+        }
+
+        .inbox-list-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .inbox-list-item.active {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .inbox-list-item.active:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #1f2937;
+            color: #f3f4f6;
+        }
+
+        .dark-mode .inbox-list-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .dark-mode .inbox-list-item.active {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dark-mode .inbox-list-item.active:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-800 dark-mode">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="sidebar bg-gray-900 shadow-md p-4">
+            <ul class="inbox-list">
+                <li class="inbox-list-item p-2 rounded-md cursor-pointer active">
+                    <span class="block">Inbox</span>
+                </li>
+                <li class="inbox-list-item p-2 rounded-md cursor-pointer">
+                    <span class="block">Starred</span>
+                </li>
+                <li class="inbox-list-item p-2 rounded-md cursor-pointer">
+                    <span class="block">Sent Mail</span>
+                </li>
+                <li class="inbox-list-item p-2 rounded-md cursor-pointer">
+                    <span class="block">Drafts</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="flex-grow p-4">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="text-2xl font-bold">Inbox</h1>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md shadow-md">
+                    Compose
+                </button>
+            </div>
+            <!-- Email list -->
+            <div class="bg-gray-900 shadow-md p-4 rounded-md">
+                <div class="email-item flex justify-between items-center mb-4 p-2 rounded-md cursor-pointer active">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-2">
+                        <div class="flex flex-col">
+                            <span class="font-bold">John Doe</span>
+                            <span class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </div>
+                    <span class="text-gray-500">2m ago</span>
+                </div>
+                <div class="email-item flex justify-between items-center mb-4 p-2 rounded-md cursor-pointer">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-2">
+                        <div class="flex flex-col">
+                            <span class="font-bold">Jane Smith</span>
+                            <span class="text-gray-400">Nulla nec augue et nisl pretium aliquet.</span>
+                        </div>
+                    </div>
+                    <span class="text-gray-500">1h ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

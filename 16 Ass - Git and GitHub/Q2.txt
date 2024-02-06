@@ -1,0 +1,19 @@
+Working Directory:
+The working directory is the directory on your local machine where you are actively working on your project files.
+It contains all the files and directories that make up your project, including source code, configuration files, and other assets.
+Any changes made to files in the working directory are not automatically tracked by Git until they are explicitly staged or committed.
+
+Staging Area (Index):
+The staging area, also known as the index, is an intermediate area between the working directory and the Git repository.
+It acts as a holding area for changes that you want to include in your next commit.
+Before a file's changes can be committed to the repository, they must first be staged. This allows you to selectively choose which changes to include in the commit.
+Staging changes allows you to review and organize them before committing, making it easier to create meaningful and logically organized commits.
+
+Repository:
+The repository, or repo, is where Git stores the complete history of your project, including all files, commits, branches, and tags.
+It is typically located in a hidden directory named .git at the root of your project.
+The repository consists of three main components:
+Object Database: Stores all the files and changes in your project as objects, including commits, trees, and blobs.
+Index: A binary file that represents the staging area and contains information about the files and changes staged for the next commit.
+Reference Log: A log of references to commits, branches, tags, and other objects in the repository.
+The repository is the central point of collaboration in a Git workflow, allowing developers to share changes, collaborate on code, and track the evolution of the project over time.
