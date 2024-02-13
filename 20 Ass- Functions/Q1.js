@@ -1,7 +1,6 @@
-const square = (num)=>{
-    num = 3;
-    return num*num;
-
+const squareOfNum = (num) => {
+    num = 5;
+    return Math.pow(num, 2);
 }
-console.log(square()); 
+console.log(squareOfNum()); //Output:25
 
