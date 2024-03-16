@@ -1,0 +1,26 @@
+Callbacks and Promises are both used to manage asynchronous code in JavaScript, but they have different approaches and characteristics. Here's a comparison of the two:
+
+##Callbacks##:
+
+Callbacks are functions passed as arguments to other functions, which are then invoked once an asynchronous operation completes.
+They have been widely used in JavaScript for handling asynchronous tasks.
+Callback-based code often leads to "callback hell" or "pyramid of doom," where multiple nested callbacks make the code difficult to read, write, and maintain.
+Error handling can be cumbersome with callbacks, as each callback needs to check for errors individually.
+
+
+##Promises##:
+
+Promises represent the eventual completion or failure of an asynchronous operation and allow chaining of asynchronous operations.
+They provide a more structured way to handle asynchronous code compared to callbacks.
+Promises introduce methods like .then() and .catch() for handling success and error cases, respectively, making the code more readable and easier to reason about.
+Promises offer built-in error propagation, which allows errors to be caught at a higher level in the chain, reducing the need for repetitive error handling code.
+Promises support features like Promise.all() and Promise.race() for coordinating multiple asynchronous operations.
+Promises provide better support for error handling and debugging, as unhandled rejections are automatically captured and logged by the JavaScript engine.
+Why Promises are preferred for managing asynchronous code:
+
+Readability: Promises offer a more readable and maintainable way to write asynchronous code compared to callbacks, especially when dealing with multiple asynchronous operations.
+Error Handling: Promises provide a standardized way to handle errors, reducing the likelihood of errors being overlooked or handled inconsistently.
+Chaining: Promises support chaining of asynchronous operations using .then() method, allowing for a more linear and sequential flow of code.
+Compatibility: Promises are built into modern JavaScript and are supported by most modern browsers and Node.js environments, making them a widely adopted choice for managing asynchronous code.
+Asynchronous Iteration: Promises work well with modern JavaScript features like async functions and await keyword, providing a more synchronous-like programming style for handling asynchronous operations.
+Overall, Promises are preferred for managing asynchronous code in JavaScript due to their improved readability, error handling, and compatibility with modern JavaScript features. They offer a more structured and manageable approach to dealing with asynchronous operations compared to traditional callback-based approaches.

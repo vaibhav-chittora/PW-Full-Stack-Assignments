@@ -1,0 +1,11 @@
+The same-origin policy is a security measure implemented by web browsers to prevent scripts running on one origin (domain, protocol, and port) from accessing resources on another origin. This policy helps protect users from cross-site scripting (XSS) attacks, where malicious scripts on a different origin could potentially access sensitive data or perform actions on behalf of the user.
+
+Under the same-origin policy, AJAX requests initiated from a web page can only access resources (such as data or APIs) on the same origin as the web page itself. If an AJAX request is made to a different origin, the browser will typically block the request, and the JavaScript code will not receive the response.
+
+To work around the same-origin policy and allow AJAX requests to access resources on different origins, several techniques can be used:
+
+1) Cross-Origin Resource Sharing (CORS): CORS is a mechanism that allows web servers to specify which origins are permitted to access their resources. By configuring the server to include appropriate CORS headers in its responses, it can indicate to the browser that requests from specific origins should be allowed. This allows AJAX requests from approved origins to access the server's resources.
+
+2) JSONP (JSON with Padding): JSONP is a technique that leverages the ability to include external scripts in a web page. Instead of making AJAX requests directly, JSONP works by dynamically adding a <script> tag to the page's HTML, with the source URL pointing to the desired resource on a different origin. The server responds with a JavaScript function call, wrapping the JSON data, which is then executed by the browser, allowing the data to be accessed.
+
+3) Proxy Server: Another approach is to set up a server-side proxy that acts as an intermediary between the client and the external resource. The client sends AJAX requests to the proxy server on the same origin, which then forwards the requests to the external server. The responses from the external server are passed back to the client through the proxy server, effectively bypassing the same-origin policy.

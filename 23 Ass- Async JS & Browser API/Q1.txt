@@ -1,0 +1,30 @@
+XMLHttpRequest (XHR) is an API provided by modern web browsers that enables client-side scripts to make HTTP requests to servers. It allows the web page to dynamically update content without reloading the entire page. XHR is a core component of AJAX (Asynchronous JavaScript and XML) technology, which stands for Asynchronous JavaScript and XML.
+
+Here's a brief overview of how XMLHttpRequest is used in AJAX:
+
+1) Creating an XMLHttpRequest Object: To make an AJAX request, you first need to create an instance of the XMLHttpRequest object using the new keyword:
+var xhr = new XMLHttpRequest();
+
+
+2)Setting up the Request: After creating the XMLHttpRequest object, you can configure the request using methods like open() and setRequestHeader():
+"xhr.open('GET', 'https://api.example.com/data', true); // Method, URL, async flag
+xhr.setRequestHeader('Content-Type', 'application/json'); // Set request headers"
+
+
+3) Handling Response: You need to define a function to handle the response from the server. This function is executed when the server responds to the request. Commonly, it's set as the onreadystatechange event handler:
+"xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        console.log(xhr.responseText); // Handle response data
+    }
+};"
+
+
+4) Sending the Request: Once the XMLHttpRequest object is configured, you can send the request to the server using the send() method:
+"xhr.send();"
+
+
+5) Asynchronous Behavior: By default, XMLHttpRequest operates asynchronously, meaning the script continues to execute while waiting for the response. You can optionally set it to synchronous mode by passing false as the third parameter to open(), but it's not recommended due to potential performance and user experience issues.
+
+
+Overall, XMLHttpRequest provides a powerful mechanism for making HTTP requests from JavaScript, enabling developers to create dynamic and interactive web applications without full page reloads.
+
